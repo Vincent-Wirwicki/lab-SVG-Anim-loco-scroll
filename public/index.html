@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/locomotive-scroll.css" />
+    <link rel="stylesheet" href="css/triangle.css" />
+    <link rel="stylesheet" href="css/spin.css" />
+    <link rel="stylesheet" href="css/perspective.css" />
+    <link rel="stylesheet" href="css/bounce.css" />
+    <link rel="stylesheet" href="css/dotLoader.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pattern.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/wave.css" />
+    <title>Svg Lab</title>
+  </head>
+  <body>
+    <div data-scroll-container id="container">
+      <nav>
+        <ul>
+          <li><a href="#bounce" data-scroll-to>1</a></li>
+          <li><a href="#svgDotLoading" data-scroll-to>2</a></li>
+          <li><a href="#perspective" data-scroll-to>3</a></li>
+          <li><a href="#svgCircleLineLoading" data-scroll-to>4</a></li>
+        </ul>
+      </nav>
+      <div class="about">
+        <p>A small project using</p>
+        <p>Svg and Locomotive scroll</p>
+      </div>
+      <section data-scroll-section id="bounce">
+        <div>
+          <svg viewbox="0 0 100 100" width="300" height="300">
+            <path
+              class="dashStroke"
+              d="M 50,50
+                m -20, 0
+                a 20,20 0 1,0 40,0
+                a 20,20 0 1,0 -40,0"
+            ></path>
+            <circle class="mover" r="2"></circle>
+          </svg>
+        </div>
+      </section>
+      <section data-scroll-section id="svgDotLoading">
+        <div data-scroll data-scroll-speed="4" class="dotLoader">
+          <svg viewbox="0 0 100 100" width="200" height="200">
+            <circle class="horizontalLoader" r="4"></circle>
+            <circle class="horizontalLoader" r="4"></circle>
+            <circle class="horizontalLoader" r="4"></circle>
+            <circle class="horizontalLoader" r="4"></circle>
+          </svg>
+        </div>
+        <div data-scroll data-scroll-speed="-2" class="dotLoader">
+          <svg viewbox="0 0 100 100" width="200" height="200">
+            <circle class="verticalLoader" r="4"></circle>
+            <circle class="verticalLoader" r="4"></circle>
+            <circle class="verticalLoader" r="4"></circle>
+          </svg>
+        </div>
+        <div data-scroll data-scroll-speed="6" class="dotLoader">
+          <svg viewbox="0 0 100 100" width="200" height="200">
+            <circle class="circleLoader" r="2"></circle>
+            <circle class="circleLoader" r="4"></circle>
+            <circle class="circleLoader" r="4"></circle>
+            <circle class="circleLoader" r="2"></circle>
+          </svg>
+        </div>
+      </section>
+      <section data-scroll-section class="section" id="perspective">
+        <div
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="4"
+        >
+          <svg
+            id="complexShape"
+            class="complexShape"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="600"
+            height="600"
+            viewBox="0 0 1184 884"
+            enable-background="new 0 0 1184 884"
+            xml:space="preserve"
+          >
+            <polygon
+              stroke-miterlimit="10"
+              points="909,414 782,350.5 655,412 782.5,475 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="870.507,413.41 779.753,368.033 689,411.98 780.11,457 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="846.507,414.363 779.847,381.033 713.187,413.313 780.109,446.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="824.841,414.609 779.689,392.033 734.537,413.898 779.866,436.296 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="724.507,99.363 657.847,66.033 591.187,98.313 658.109,131.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="721.507,85.363 654.847,52.033 588.187,84.313 655.109,117.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="473.507,165.363 406.847,132.033 340.187,164.313 407.109,197.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="470.507,151.363 403.847,118.033 337.187,150.313 404.109,183.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="855.507,60.363 788.847,27.033 722.187,59.313 789.109,92.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="830.585,59.632 787.386,38.032 744.187,58.951 787.556,80.381 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="1036,327 909,263.5 782,325 909.5,388 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="1166,242 1039,178.5 912,240 1039.5,303 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="1036,156 909,92.5 782,154 909.5,217 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="498.149,295.598 402.154,247.6 275,309 400.5,372 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="373.149,261.598 277.154,213.6 150,275 274,337 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="249,227 148.154,177.6 21,239 146.5,302"
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="332,240 400,206 275,145 179,192 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="402,232 529.25,171.5 401,109 302.667,157.334 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="524.25,200.75 654,136 529,75 431,123.25 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="655,164 779,102 654,41 558,88 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="780.75,130 908,66 783,5 682.75,54.25 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="625.149,330.598 529.154,282.6 402,344 527.5,407 "
+            />
+            <polyline
+              stroke-miterlimit="10"
+              points="752.149,364.598 656.154,316.6 529,378 654.5,441 "
+            />
+            <line stroke-miterlimit="10" x1="21" y1="239" x2="21" y2="490" />
+            <line
+              stroke-miterlimit="10"
+              x1="780.25"
+              y1="102.5"
+              x2="780"
+              y2="862"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="1165"
+              y1="242"
+              x2="1165"
+              y2="671"
+            />
+            <line stroke-miterlimit="10" x1="147" y1="275" x2="147" y2="552" />
+            <line stroke-miterlimit="10" x1="274" y1="311" x2="274" y2="616" />
+            <line stroke-miterlimit="10" x1="401" y1="208" x2="401" y2="677" />
+            <line stroke-miterlimit="10" x1="528" y1="172" x2="528" y2="740" />
+            <line stroke-miterlimit="10" x1="655" y1="135" x2="655" y2="800" />
+            <line stroke-miterlimit="10" x1="910" y1="66" x2="910" y2="798" />
+            <line
+              stroke-miterlimit="10"
+              x1="1037"
+              y1="155"
+              x2="1037"
+              y2="738"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="655.667"
+              y1="299.667"
+              x2="768.667"
+              y2="356"
+            />
+            <line stroke-miterlimit="10" x1="656" y1="285" x2="780" y2="346" />
+            <line
+              stroke-miterlimit="10"
+              x1="655"
+              y1="245.5"
+              x2="781"
+              y2="307"
+            />
+            <path stroke-miterlimit="10" d="M779,278" />
+            <path stroke-miterlimit="10" d="M655,217" />
+            <line
+              stroke-miterlimit="10"
+              x1="528.333"
+              y1="249.334"
+              x2="655"
+              y2="312"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="781"
+              y1="172"
+              x2="909.667"
+              y2="235.667"
+            />
+            <line stroke-miterlimit="10" x1="780" y1="190" x2="910" y2="254" />
+            <line
+              stroke-miterlimit="10"
+              x1="781"
+              y1="305"
+              x2="910.75"
+              y2="240.75"
+            />
+            <path stroke-miterlimit="10" d="M909.75,216.75" />
+            <path stroke-miterlimit="10" d="M780,281" />
+            <line stroke-miterlimit="10" x1="713" y1="135" x2="713" y2="344" />
+            <line
+              stroke-miterlimit="10"
+              x1="528.5"
+              y1="234.5"
+              x2="655"
+              y2="171"
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="541,236 541,247 648,300 648,182.25 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="555,237.07 555,245.834 640,288.057 640,194.25 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="567,237.674 567,244.72 635,278.663 635,203.25 "
+            />
+            <polygon
+              stroke-miterlimit="10"
+              points="578,238.228 578,243.574 630,269.33 630,212.107 "
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="416.25"
+              y1="253.75"
+              x2="529"
+              y2="198.5"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="543"
+              y1="384.5"
+              x2="654.5"
+              y2="330.5"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="655"
+              y1="397.5"
+              x2="738"
+              y2="357.667"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="655"
+              y1="385.5"
+              x2="726"
+              y2="351.334"
+            />
+            <path stroke-miterlimit="10" d="M655.333,433.667" />
+            <path stroke-miterlimit="10" d="M538,373" />
+            <path stroke-miterlimit="10" d="M550,367" />
+            <line
+              stroke-miterlimit="10"
+              x1="819.001"
+              y1="343.353"
+              x2="818.992"
+              y2="369"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="854"
+              y1="360.5"
+              x2="853.991"
+              y2="386.834"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="655"
+              y1="330.167"
+              x2="710.333"
+              y2="358.5"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="655.333"
+              y1="430.334"
+              x2="554"
+              y2="380.001"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="415"
+              y1="337.667"
+              x2="528.667"
+              y2="394.667"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="514"
+              y1="290.667"
+              x2="608.667"
+              y2="338.667"
+            />
+            <line stroke-miterlimit="10" x1="514" y1="291" x2="514" y2="386" />
+            <line stroke-miterlimit="10" x1="385" y1="214" x2="385" y2="352" />
+            <line stroke-miterlimit="10" x1="415" y1="254" x2="415" y2="337" />
+            <line stroke-miterlimit="10" x1="543" y1="289" x2="543" y2="372" />
+            <line
+              stroke-miterlimit="10"
+              x1="417"
+              y1="351"
+              x2="542.5"
+              y2="290"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="286.5"
+              y1="302.5"
+              x2="401.5"
+              y2="361"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="401.5"
+              y1="261.5"
+              x2="485"
+              y2="304"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="359.5"
+              y1="339.5"
+              x2="384.5"
+              y2="327"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="341"
+              y1="328.5"
+              x2="383.5"
+              y2="308"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="321"
+              y1="318.5"
+              x2="385.5"
+              y2="288"
+            />
+            <line stroke-miterlimit="10" x1="449" y1="336" x2="449" y2="353" />
+            <line stroke-miterlimit="10" x1="468" y1="327" x2="468" y2="364" />
+            <line stroke-miterlimit="10" x1="495" y1="315" x2="495" y2="376" />
+            <line
+              stroke-miterlimit="10"
+              x1="780"
+              y1="153.333"
+              x2="656.667"
+              y2="216.667"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="779"
+              y1="173.333"
+              x2="655.667"
+              y2="236.667"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="781"
+              y1="192.333"
+              x2="655.333"
+              y2="257"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="780.667"
+              y1="324.334"
+              x2="655.333"
+              y2="265.667"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="515.5"
+              y1="82.5"
+              x2="640.5"
+              y2="143"
+            />
+            <line
+              stroke-miterlimit="10"
+              x1="497.5"
+              y1="89.5"
+              x2="622.5"
+              y2="150"
+            />
+          </svg>
+        </div>
+      </section>
+      <section data-scroll-section id="svgCircleLineLoading">
+        <div data-scroll data-scroll-speed="3" class="circleLineLoad">
+          <svg viewbox="0 0 100 100" width="150" height="150">
+            <circle class="circleLineLoader" cx="50" cy="50" r="10"></circle>
+            <circle class="circleLineLoader" cx="50" cy="50" r="20"></circle>
+            <circle class="circleLineLoader" cx="50" cy="50" r="30"></circle>
+            <circle class="circleLineLoader" cx="50" cy="50" r="40"></circle>
+          </svg>
+        </div>
+        <div data-scroll data-scroll-speed="-3">
+          <svg
+            class="triangle"
+            width="300"
+            height="300"
+            viewBox="0 0 200 200"
+            enable-background="new 0 0 200 200"
+            xml:space="preserve"
+          >
+            <polyline
+              stroke="#F25C5C"
+              points="109.422,37.098 167.149,141.238 72.266,141.238 99.362,94.037 "
+            />
+            <polyline
+              stroke="#AE84D9"
+              points="30.482,139.758 87.887,36.616 136.55,122.724 83.066,122.724 "
+            />
+            <polyline
+              points="159.435,158.401 41.154,158.336 88.723,74.254 114.597,122.531 "
+            />
+          </svg>
+        </div>
+      </section>
+    </div>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

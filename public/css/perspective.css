@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.complexShape {
+  stroke: #f2bdd6;
+  fill: none;
+  stroke-dasharray: 32, 64;
+  stroke-dashoffset: 400;
+  animation: staircase 6s cubic-bezier(0.11, 0, 0.5, 0) infinite;
+}
+
+@keyframes staircase {
+  20% {
+    stroke-dasharray: -16, -32;
+  }
+
+  25% {
+    stroke-dasharray: -4, -8;
+  }
+
+  45% {
+    stroke-dasharray: 1, 1;
+  }
+
+  50% {
+    stroke-dasharray: 1, 2;
+  }
+
+  55% {
+    stroke-dasharray: 2, 4;
+  }
+
+  75% {
+    stroke-dasharray: -2, -4;
+  }
+
+  85% {
+    stroke-dasharray: -32, -64;
+  }
+
+  95% {
+    stroke-dasharray: -64, -128;
+  }
+
+  100% {
+    stroke-dasharray: 32, 64;
+  }
+}

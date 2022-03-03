@@ -1,0 +1,147 @@
+#dotLoader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.horizontalLoader {
+  fill: #5ff249;
+  animation: horizontalLoad 2s infinite cubic-bezier(0.76, 0, 0.24, 1);
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.horizontalLoader:nth-of-type(1) {
+  offset-path: path("M50 50 H 60 40");
+  offset-distance: 0%;
+  animation-delay: 0.1s;
+}
+
+.horizontalLoader:nth-of-type(2) {
+  offset-path: path("M50 50 H 90 10");
+  offset-distance: 0%;
+  animation-delay: 0.2s;
+}
+
+.horizontalLoader:nth-of-type(3) {
+  offset-path: path("M50 50 H 10 90");
+  offset-distance: 0%;
+  animation-delay: 0.2s;
+}
+
+.horizontalLoader:nth-of-type(4) {
+  offset-path: path("M50 50 H 40 60");
+  offset-distance: 0%;
+  animation-delay: 0.3s;
+}
+
+@keyframes horizontalLoad {
+  30% {
+    offset-distance: 100%;
+    opacity: 0.4;
+    transform: scale(0.4);
+  }
+
+  40% {
+    offset-distance: 100%;
+    opacity: 0.4;
+    transform: scale(0.2);
+  }
+
+  90% {
+    offset-distance: 0%;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    offset-distance: 0%;
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.circleLoader {
+  fill: #16f2f2;
+  offset-path: path("M 50,50 m -20, 0 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0");
+  offset-distance: 0%;
+  animation: circularLoader 1.5s infinite cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.circleLoader:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+
+.circleLoader:nth-of-type(3) {
+  animation-delay: 300ms;
+  animation-direction: reverse;
+}
+
+.circleLoader:nth-of-type(4) {
+  animation-delay: 200ms;
+  animation-direction: reverse;
+}
+
+@keyframes circularLoader {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  10% {
+    offset-distance: 0%;
+  }
+
+  45% {
+    transform: scale(0.8);
+    opacity: 0.7;
+    offset-distance: 50%;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+    offset-distance: 50%;
+  }
+
+  90% {
+    transform: scale(0.8);
+    offset-distance: 95%;
+    opacity: 0.7;
+  }
+
+  100% {
+    offset-distance: 100%;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.verticalLoader {
+  fill: #d9307f;
+  animation: load 0.5s alternate infinite ease-in-out;
+  offset-path: path("M40 50 V 60");
+  offset-distance: 100%;
+  opacity: 1;
+}
+
+.verticalLoader:nth-of-type(2) {
+  offset-path: path("M50 50 V 60");
+  opacity: 1;
+  animation-delay: 0.1s;
+}
+
+.verticalLoader:nth-of-type(3) {
+  offset-path: path("M60 50 V 60");
+  opacity: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes load {
+  100% {
+    offset-distance: 0%;
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+}

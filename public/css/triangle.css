@@ -1,0 +1,44 @@
+.triangle {
+  fill: none;
+  stroke: #f2d649;
+  animation: triangle 4.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  opacity: 0;
+}
+
+@keyframes triangle {
+  10% {
+    stroke-dashoffset: 60;
+    stroke-dasharray: 40;
+  }
+  20% {
+    transform: rotate(-90deg);
+    stroke-dashoffset: -60;
+    stroke-dasharray: -240;
+    opacity: 1;
+  }
+
+  40% {
+    transform: rotate(60deg);
+    stroke-dashoffset: 180;
+    stroke-dasharray: -80;
+  }
+
+  60% {
+    transform: rotate(-110deg);
+    stroke-dashoffset: -120;
+    stroke-dasharray: 120;
+  }
+  80% {
+    transform: rotate(80eg);
+    stroke-dashoffset: 80;
+    stroke-dasharray: -40;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    stroke-dashoffset: -100;
+    stroke-dasharray: 40;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,70 @@
+.mover {
+  fill: #56a632;
+  offset-path: path("M 50,50 m -20, 0 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0");
+  offset-distance: 0%;
+  animation: move 2s linear infinite;
+}
+
+.dashStroke {
+  stroke: #f2e638;
+  fill: none;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: dash 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+
+  20% {
+    offset-distance: 100%;
+  }
+
+  50% {
+    offset-distance: 8%;
+  }
+
+  75% {
+    offset-distance: 25%;
+  }
+
+  95% {
+    offset-distance: 5%;
+  }
+
+  100% {
+    offset-distance: 0%;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 300;
+  }
+
+  20% {
+    stroke-dashoffset: 190;
+  }
+
+  25% {
+    stroke-dashoffset: 230;
+  }
+
+  35% {
+    stroke-dashoffset: 260;
+  }
+
+  55% {
+    stroke-dashoffset: 300;
+  }
+
+  75% {
+    stroke-dashoffset: 275;
+  }
+
+  100% {
+    stroke-dashoffset: 305;
+  }
+}
