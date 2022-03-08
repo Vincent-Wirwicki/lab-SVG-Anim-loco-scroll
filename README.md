@@ -14,7 +14,7 @@ In this project i mostly used :
 - [circle](https://developer.mozilla.org/fr/docs/Web/SVG/Element/circle) shape
 - [Path](https://developer.mozilla.org/fr/docs/Web/SVG/Tutorial/Paths) i also used [this](https://codepen.io/jakob-e/pen/bgBegJ) to transform a circle to a path
 - [dash-stroke](https://css-tricks.com/almanac/properties/s/stroke-dasharray/) and [dash-stroke-offset](https://css-tricks.com/almanac/properties/s/stroke-dashoffset/) 
-- I also imported a more complexe SVG shape made with adobe illustrator(the one on picture project)
+- I also imported a more complexe SVG shape made with adobe illustrator (the one on picture project)
 
 
 ## Locomotive scroll
