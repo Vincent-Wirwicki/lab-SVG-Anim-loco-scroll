@@ -6,7 +6,6 @@ I also try [locomotive scroll](https://github.com/locomotivemtl/locomotive-scrol
 [Demo](https://lab-mysvg-loco.herokuapp.com/)
 
 ![image](https://user-images.githubusercontent.com/98763680/156521293-ecd96f1e-c54b-43b3-aae0-874c415688c8.png)
-Svg on this image was made with Illustrator
 
 ## SVG propreties
 
@@ -22,7 +21,7 @@ It's an easy tool to use, to make smooth scrolling experience and parallax effec
 
 ## Animation
 For animation it's pure css.   
-I experiment with [cubic bezier](https://youtube.com/shorts/BThr1pb77Fo?feature=share) and used value from [here](https://easings.net/fr)
+I experiment with [cubic bezier](https://youtube.com/shorts/BThr1pb77Fo?feature=share) and used easing value from [here](https://easings.net/fr)
 
 
 
